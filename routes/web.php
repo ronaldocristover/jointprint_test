@@ -13,8 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
+# Task 1
+Route::get('/stringreducer/{value?}', 'MainController@stringReducer');
+
+
+# Task 4
 Route::get('/', 'MainController@index');
 Route::get('product', 'ProductController@index');
 Route::get('cart', 'CartController@index');
-
-Route::get('/test1', 'MainController@stringReducer');
